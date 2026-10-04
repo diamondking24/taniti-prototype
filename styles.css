@@ -40,6 +40,7 @@ nav ul { list-style: none; display: flex; gap: 22px; }
 nav a { text-decoration: none; color: var(--ink); font-weight: 500; padding: 4px 2px; }
 nav a:hover { color: var(--teal); }
 nav a.active { color: var(--teal-dark); border-bottom: 3px solid var(--coral); }
+nav li.mobile-only { display: none; }
 #menu-toggle { display: none; background: none; border: 2px solid var(--teal); border-radius: 6px; color: var(--teal-dark); font-size: 1.3rem; padding: 2px 10px; cursor: pointer; }
 
 /* Hero */
@@ -233,6 +234,8 @@ footer a { color: #8fe3cf; text-decoration: none; margin-right: 14px; }
   nav ul { flex-direction: column; gap: 0; padding: 8px 0; }
   nav li { border-top: 1px solid var(--light); }
   nav a { display: block; padding: 12px 4px; }
+  nav li.mobile-only { display: block; }
+  nav li.mobile-only a { color: var(--coral); font-weight: 700; }
   .nav-bar { flex-wrap: wrap; }
   .hero h1 { font-size: 1.7rem; }
   .card-grid, .card-grid.two, .tiles { grid-template-columns: 1fr; }
