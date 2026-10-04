@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Places to Stay — Visit Taniti</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="nav-bar">
+    <a class="brand" href="index.html">TANITI<span>.</span></a>
+    <button id="menu-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="things-to-do.html">Things to Do</a></li>
+        <li><a class="active" href="stay.html">Stay</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="getting-around.html">Getting Around</a></li>
+        <li><a href="plan-your-trip.html">Plan Your Trip</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-title">
+    <h1>Places to Stay</h1>
+    <p>From a budget hostel to a four-star resort — all lodging is regulated and regularly inspected by the Tanitian government.</p>
+  </div>
+
+  <div class="filter-bar">
+    <label class="family"><input type="checkbox" onchange="filterFamily(this)"> Family-friendly only</label>
+    <label>Type:
+      <select><option>All</option><option>Resort</option><option>Hotel</option><option>B&amp;B</option><option>Hostel</option></select>
+    </label>
+    <label>Price:
+      <select><option>Any</option><option>Under $100</option><option>$100–$250</option><option>$250+</option></select>
+    </label>
+  </div>
+
+  <div class="card-grid two">
+    <div class="card" data-family="no">
+      <div class="photo ph-resort">Four-Star Resort</div>
+      <div class="body">
+        <span class="tag badge">Government inspected</span>
+        <h3>Taniti Grand Resort</h3>
+        <p class="desc">The island's large four-star resort on Yellow Leaf Bay, with pools, dining, and a spa.</p>
+        <p class="meta">From $310 / night</p>
+        <div class="actions"><a class="btn small" href="book.html">Book</a></div>
+      </div>
+    </div>
+    <div class="card" data-family="yes">
+      <div class="photo ph-hotel">Family Hotel</div>
+      <div class="body">
+        <span class="tag">Family-friendly</span>
+        <h3>Bayview Family Hotel</h3>
+        <p class="desc">A small, family-owned hotel near the beach with connecting rooms and cribs on request.</p>
+        <p class="meta">From $120 / night</p>
+        <div class="actions"><a class="btn small" href="book.html">Book</a></div>
+      </div>
+    </div>
+    <div class="card" data-family="no">
+      <div class="photo ph-bnb">Bed &amp; Breakfast</div>
+      <div class="body">
+        <span class="tag badge">Government inspected</span>
+        <h3>Harbor Light B&amp;B</h3>
+        <p class="desc">A quiet bed and breakfast near the harbor, part of Taniti's growing B&amp;B scene.</p>
+        <p class="meta">From $85 / night</p>
+        <div class="actions"><a class="btn small" href="book.html">Book</a></div>
+      </div>
+    </div>
+    <div class="card" data-family="no">
+      <div class="photo ph-hostel">Hostel</div>
+      <div class="body">
+        <span class="tag badge">Government inspected</span>
+        <h3>Taniti City Hostel</h3>
+        <p class="desc">Clean, inexpensive shared and private rooms in walkable Taniti City.</p>
+        <p class="meta">From $30 / night</p>
+        <div class="actions"><a class="btn small" href="book.html">Book</a></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div>
+      <strong>Taniti Tourism</strong><br>
+      A welcoming island experience in the Pacific.
+    </div>
+    <div>
+      <a href="things-to-do.html">Things to Do</a>
+      <a href="stay.html">Stay</a>
+      <a href="dining.html">Dining</a>
+      <a href="getting-around.html">Getting Around</a>
+      <a href="plan-your-trip.html">Plan Your Trip</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

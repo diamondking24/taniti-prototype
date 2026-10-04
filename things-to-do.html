@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Things to Do — Visit Taniti</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="nav-bar">
+    <a class="brand" href="index.html">TANITI<span>.</span></a>
+    <button id="menu-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="things-to-do.html">Things to Do</a></li>
+        <li><a href="stay.html">Stay</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="getting-around.html">Getting Around</a></li>
+        <li><a href="plan-your-trip.html">Plan Your Trip</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-title">
+    <h1>Things to Do on Taniti</h1>
+    <p>Every activity is booked right here — pick one to see prices, hours, and ages.</p>
+  </div>
+
+  <div class="filter-bar">
+    <label class="family"><input type="checkbox" onchange="filterFamily(this)"> Family-friendly only</label>
+    <label>Category:
+      <select><option>All</option><option>Water</option><option>Land</option><option>Indoor</option></select>
+    </label>
+    <label>Area:
+      <select><option>All</option><option>Taniti City</option><option>Merriton Landing</option></select>
+    </label>
+  </div>
+
+  <div class="card-grid">
+    <div class="card" data-family="yes">
+      <div class="photo ph-snorkel">Snorkeling</div>
+      <div class="body">
+        <span class="tag">Family-friendly</span>
+        <h3>Snorkeling</h3>
+        <p class="desc">Calm, clear water in Yellow Leaf Bay. Gear included, ages 6 and up.</p>
+        <div class="actions"><a class="btn small secondary" href="activity-snorkeling.html">Details &amp; Book</a></div>
+      </div>
+    </div>
+    <div class="card" data-family="yes">
+      <div class="photo ph-zip">Zip-lining</div>
+      <div class="body">
+        <span class="tag">Family-friendly</span>
+        <h3>Zip-lining</h3>
+        <p class="desc">Glide over the rainforest canopy with certified guides in Merriton Landing.</p>
+        <div class="actions"><a class="btn small secondary" href="activity-snorkeling.html">Details &amp; Book</a></div>
+      </div>
+    </div>
+    <div class="card" data-family="yes">
+      <div class="photo ph-volcano">Volcano Tour</div>
+      <div class="body">
+        <span class="tag">Family-friendly</span>
+        <h3>Volcano Tour</h3>
+        <p class="desc">A guided bus-and-walk tour to the island's small active volcano.</p>
+        <div class="actions"><a class="btn small secondary" href="activity-snorkeling.html">Details &amp; Book</a></div>
+      </div>
+    </div>
+    <div class="card" data-family="no">
+      <div class="photo ph-fishing">Fishing Charter</div>
+      <div class="body">
+        <h3>Chartered Fishing Tour</h3>
+        <p class="desc">Half-day and full-day charters out of the harbor with local captains.</p>
+        <div class="actions"><a class="btn small secondary" href="activity-snorkeling.html">Details &amp; Book</a></div>
+      </div>
+    </div>
+    <div class="card" data-family="no">
+      <div class="photo ph-heli">Helicopter Ride</div>
+      <div class="body">
+        <h3>Helicopter Ride</h3>
+        <p class="desc">See the volcano, rainforest, and Yellow Leaf Bay from the air.</p>
+        <div class="actions"><a class="btn small secondary" href="activity-snorkeling.html">Details &amp; Book</a></div>
+      </div>
+    </div>
+    <div class="card" data-family="yes">
+      <div class="photo ph-museum">History Museum</div>
+      <div class="body">
+        <span class="tag">Family-friendly</span>
+        <h3>Local History Museum</h3>
+        <p class="desc">Taniti's story, from fishing village to island destination.</p>
+        <div class="actions"><a class="btn small secondary" href="activity-snorkeling.html">Details &amp; Book</a></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div>
+      <strong>Taniti Tourism</strong><br>
+      A welcoming island experience in the Pacific.
+    </div>
+    <div>
+      <a href="things-to-do.html">Things to Do</a>
+      <a href="stay.html">Stay</a>
+      <a href="dining.html">Dining</a>
+      <a href="getting-around.html">Getting Around</a>
+      <a href="plan-your-trip.html">Plan Your Trip</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

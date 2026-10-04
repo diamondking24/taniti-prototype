@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book — Visit Taniti</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="nav-bar">
+    <a class="brand" href="index.html">TANITI<span>.</span></a>
+    <button id="menu-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="things-to-do.html">Things to Do</a></li>
+        <li><a href="stay.html">Stay</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="getting-around.html">Getting Around</a></li>
+        <li><a href="plan-your-trip.html">Plan Your Trip</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-title">
+    <h1>Book your trip</h1>
+    <p>Fill in the details below. You'll see a confirmation screen with a reference number, and a confirmation email follows right away.</p>
+  </div>
+
+  <section class="block">
+    <form class="booking" onsubmit="submitBooking(event)">
+      <label>What are you booking?
+        <select>
+          <option>Snorkeling at Yellow Leaf Bay</option>
+          <option>Bayview Family Hotel</option>
+          <option>Taniti Grand Resort</option>
+          <option>Harbor Light B&amp;B</option>
+          <option>Taniti City Hostel</option>
+          <option>Zip-lining</option>
+          <option>Volcano Tour</option>
+        </select>
+      </label>
+      <div class="row">
+        <label>Start date
+          <input type="date" required>
+        </label>
+        <label>End date
+          <input type="date">
+        </label>
+      </div>
+      <div class="row">
+        <label>Adults
+          <input type="number" min="1" value="2" required>
+        </label>
+        <label>Children
+          <input type="number" min="0" value="2">
+        </label>
+      </div>
+      <label>Full name
+        <input type="text" placeholder="Your name" required>
+      </label>
+      <label>Email
+        <input type="email" placeholder="you@example.com" required>
+      </label>
+      <p class="form-note">No payment is taken now — you pay when you arrive. Free cancellation up to 48 hours before your booking.</p>
+      <button class="btn" type="submit">Confirm Booking</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div>
+      <strong>Taniti Tourism</strong><br>
+      A welcoming island experience in the Pacific.
+    </div>
+    <div>
+      <a href="things-to-do.html">Things to Do</a>
+      <a href="stay.html">Stay</a>
+      <a href="dining.html">Dining</a>
+      <a href="getting-around.html">Getting Around</a>
+      <a href="plan-your-trip.html">Plan Your Trip</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
